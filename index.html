@@ -2,38 +2,39 @@
 
 <html lang="en">
   <head>
-    <meta charset=UTF-8">
+    <meta charset="UTF-8">
     <title>Google Homepage Replica</title>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>  
     <link rel="stylesheet" href="./main.css">
   </head>  
   
-  <body>  
+  <body class="body">  
      <div class="main">
        <header>
-         <nav>
-          <a href="#">Gmail</a>
-          <a href="#">Images</a>
-          <a id="logo" href="#"><img src="./images/apps.png" alt="Google Apps"></a>
-          <a href="#"><button>Sign in</button></a>
+         <nav class="nav">
+          <a href="#" id="gmail">Gmail</a>
+          <a href="#" id="images">Images</a>
+          <a id="square" href="#"><img id="apps" src="./images/apps.png" alt="Google Apps"></a>
+          <a href="#" id="sign-in">Sign in</a>
         </nav>
         </header>
 
-       <div class="center">
-        <div class="logo">
+        <a id="logo">
           <img src="./images/googlelogo_color_272x92dp.png" alt="">
-        </div>
-        </div>
+        </a>
+        
 
-        <div class="search"><form action="">
-          <input type="search" name="search_bar" id="search_bar"></form></div>
-          <input type="image" id="vocal-search" src="./images/mic.png" name="vocal_search" title="Search by voice" class="search">
+        <div class="search"><form action="#">
+          <input type="search" name="search_bar" id="search_bar"></form>
         </div>
+          <input type="image" id="vocal-search" src="./images/mic.png" alt="vocal" name="vocal_search" title="Search by voice" class="search">
+        
         <div class="buttons">
-          <button type="button">Google Search</button><br>
-          <button type="button">I'm Feeling Lucky</button><br>
+          <button type="button">Google Search</button>
+          <button type="button">I'm Feeling Lucky</button>
           <p>Google offered in: <a href="#">日本語</a></p>
         </div>
+      </div>
 
        <footer class="footer">
         <a href="#" id="Japan">Japan</a>
@@ -52,7 +53,6 @@
           <p><a href="#" id="settings">Settings</a></p>
         </div>
         </div>
-       </div>
       </footer>  
   </body>
 

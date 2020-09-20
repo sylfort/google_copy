@@ -47,3 +47,75 @@ table {
 	border-spacing: 0;
 }
 
+html {
+	height:100%;
+	min-height: 100%;
+
+  }
+  
+  .nav {
+	display: grid;
+	grid-template-columns: 1fr 50px 50px 50px 50px;
+	grid-template-rows: 50px;
+	grid-template-areas:
+	". gmail images square sign-in" ;
+  }
+
+  a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.87);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #gmail{
+	grid-area: gmail;
+	justify-self: center;
+	align-self: center;
+  }
+
+  #images{
+	grid-area: images;
+	justify-self: center;
+	align-self: center;
+  }
+
+  #square{
+	grid-area: square;
+	justify-self: center;
+	align-self: center;
+	display: block;
+	max-height: fit-content;
+	max-width: fit-content;
+  }
+
+  #apps{
+	width: 30px;
+	height: 30px;
+  }
+
+  #sign-in{
+	grid-area: sign-in;
+	justify-self: center;
+	align-self: center;
+  }
+  
+
+  
+  .logo {
+	background-color: green;
+  }
+
+  .footer {
+	background-color: red;
+  }
+
+  .search {
+	background-color:yellow;
+  }
+
+  .body{
+	font-family: arial,sans-serif;
+  }
+
+
+
