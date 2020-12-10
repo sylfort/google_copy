@@ -3,216 +3,289 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 html {
-	height:100%;
-	min-height: 100%;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
+  height: 100%;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
 
-  }
+/*Nav Bar section*/
 
-    /*Nav Bar section*/
-  
-  .nav {
-	display: grid;
-	grid-template-columns: 1fr 50px 50px 50px 50px;
-	grid-template-rows: 50px;
-	grid-template-areas:
-	". gmail images square sign-in" ;
-  }
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px 50px 50px;
+  grid-template-rows: 50px;
+  grid-template-areas: ". gmail images square sign-in";
+}
 
-  a {
-	text-decoration: none;
-	color: rgba(0,0,0,0.87);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 13px;
-  }
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
 
-  #gmail{
-	grid-area: gmail;
-	justify-self: center;
-	align-self: center;
-  }
+.gmail {
+  grid-area: gmail;
+  justify-self: center;
+  align-self: center;
+}
 
-  #images{
-	grid-area: images;
-	justify-self: center;
-	align-self: center;
-  }
+.images {
+  grid-area: images;
+  justify-self: center;
+  align-self: center;
+}
 
-  #square{
-	grid-area: square;
-	justify-self: center;
-	align-self: center;
-	display: block;
-	max-height: fit-content;
-	max-width: fit-content;
-  }
+.square {
+  grid-area: square;
+  justify-self: center;
+  align-self: center;
+  display: block;
+  max-height: fit-content;
+  max-width: fit-content;
+}
 
-  #apps{
-	width: 30px;
-	height: 30px;
-  }
+.apps {
+  width: 30px;
+  height: 30px;
+}
 
-  #sign-in{
-	grid-area: sign-in;
-	justify-self: center;
-	align-self: center;
-  }
+.sign-in {
+  grid-area: sign-in;
+  justify-self: center;
+  align-self: center;
+}
 
-  /*Middle section*/
-  
-  .middle{
-	  min-height: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 250px 70px 70px 250px;
-	grid-template-areas: 
-	". logo ."
-	". search ."
-	". flexbox ."
-	". google-text .";
-  }
+/*Middle section*/
 
+.middle {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 70px 70px 250px;
+  grid-template-areas:
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". google-text .";
+}
 
-  #logo {
-	justify-self: center;
-	align-self: end;
-	grid-area: logo;
-  }
+.logo {
+  justify-self: center;
+  align-self: end;
+  grid-area: logo;
+}
 
-  #search{
-	grid-area: search;
-	justify-self: center;
-	align-self: center;
-  }
+.search {
+  grid-area: search;
+  justify-self: center;
+  align-self: center;
+}
 
-  #flexbox {
-	  display: flexbox;
-	  grid-area: flexbox;
-	  justify-self: center;
-	  align-self: center;
-  }
+.flexbox {
+  display: flexbox;
+  grid-area: flexbox;
+  justify-self: center;
+  align-self: center;
+}
 
-  #search-btn{
-	
-  }
+.search-btn {
+}
 
-  #random-btn{
-	
-  }
+.random-btn {
+}
 
-  #google-text{
-	grid-area: google-text;
-	justify-self: center;
-	
-  }
+.google-text {
+  grid-area: google-text;
+  justify-self: center;
+}
 
 /*Footer section*/
 
-  .footer {
-    position:absolute;
-    bottom:0;
-    left:0;
-	right:0;
-	display: grid;
-	grid-template-columns: 100px 100px 100px 1fr 1fr 1fr;
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-areas:
+    "japan ."
+    "business about advertising . how privacy terms settings";
 }
 
-.japan{
-	display: grid;
-	grid-template-columns: 50px 1fr;
-	grid-template-rows: 50px;
-	grid-template-areas:
-	"japan ." ;
+.footer-down-left {
+  justify-items: left;
 }
 
-#japan{
-	grid-area: japan;
-	justify-self: center;
-	align-self: center;
+.footer-down-left {
+  justify-items: right;
 }
 
-#business {
-	grid-area: advertising;
-	justify-self: center;
-	align-self: center;
-}
-#about {
-	grid-area: business;
-	justify-self: center;
-	align-self: center;
-}
-#advertising {
-	grid-area: about;
-	justify-self: center;
-	align-self: center;
-}
-#how {
-	grid-area: how;
-	justify-self: center;
-	align-self: center;
-}
-#privacy {
-	grid-area: privacy;
-	justify-self: center;
-	align-self: center;
-}
-#terms {
-	grid-area: terms;
-	justify-self: center;
-	align-self: center;
-}
-#settings {
-	grid-area: settings;
-	justify-self: center;
-	align-self: center;
+.japan {
+  grid-area: japan;
+  justify-self: center;
+  align-self: center;
 }
 
-
-
-
+.business {
+  grid-area: business;
+  justify-self: center;
+  align-self: center;
+}
+.about {
+  grid-area: about;
+  justify-self: center;
+  align-self: center;
+}
+.advertising {
+  grid-area: advertising;
+  justify-self: center;
+  align-self: center;
+}
+.how {
+  grid-area: how;
+  justify-self: center;
+  align-self: center;
+}
+.privacy {
+  grid-area: privacy;
+  justify-self: center;
+  align-self: center;
+}
+.terms {
+  grid-area: terms;
+  justify-self: center;
+  align-self: center;
+}
+.settings {
+  grid-area: settings;
+  justify-self: center;
+  align-self: center;
+}
