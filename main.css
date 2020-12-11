@@ -201,9 +201,16 @@ a:hover {
     ". google-text .";
 }
 
+.logo-google {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 .logo {
   justify-self: center;
-  align-self: center;
+  align-self: end;
   grid-area: logo;
 }
 
