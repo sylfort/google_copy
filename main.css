@@ -151,6 +151,10 @@ a {
   font-size: 13px;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .gmail {
   grid-area: gmail;
   justify-self: center;
@@ -199,7 +203,7 @@ a {
 
 .logo {
   justify-self: center;
-  align-self: end;
+  align-self: center;
   grid-area: logo;
 }
 
@@ -216,10 +220,12 @@ a {
   align-self: center;
 }
 
-.search-btn {
+.search-btn:hover {
+  cursor: pointer;
 }
 
-.random-btn {
+.random-btn:hover {
+  cursor: pointer;
 }
 
 .google-text {
@@ -229,29 +235,35 @@ a {
 
 /*Footer section*/
 
+.footer a {
+  color: #70757a;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
+  font-size: 10pt;
+  background: #f2f2f2;
+  line-height: 40px;
+  min-width: 980px;
+  border-top: 1px solid #dadce0;
+  min-width: 400px;
+  position: fixed;
   left: 0;
-  right: 0;
+  bottom: 0;
+  width: 100%;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "japan ."
-    "business about advertising . how privacy terms settings";
-}
-
-.footer-down-left {
-  justify-items: left;
-}
-
-.footer-down-left {
-  justify-items: right;
+    "japan . . . . . . ."
+    "advertising business about how . privacy terms settings";
 }
 
 .japan {
   grid-area: japan;
   justify-self: center;
   align-self: center;
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
 .business {
